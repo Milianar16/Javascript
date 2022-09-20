@@ -43,3 +43,8 @@ let senha ='sonic'
 
 console.log(senha.length)
 console.log(senha.length >=8)
+
+let nome = ' miliana'
+
+console.log(nome.length)
+console.log(nome.length >=5)
