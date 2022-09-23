@@ -17,10 +17,10 @@ Digite G p /Gasolina
 if (tipoCombustivel == "A") {
     const litrosAlcool = parseFloat(prompt("Quantos litros foi abastecido?"))
 if(litrosAlcool <= 25){
-    const precoFinal = litrosAlcool * 1.9 - litrosAlcool * 0.2
+    const precoFinal = litrosAlcool * 1.9 - litrosAlcool * 0.02
     alert(" O valor pago foi de " + precoFinal)
 }else{
-    const precoFinal = litrosAlcool * 1.9 - litrosAlcool * 0.4
+    const precoFinal = litrosAlcool * 1.9 - litrosAlcool * 0.04
     alert(" O valor pago foi de " + precoFinal)
 }
     
@@ -29,11 +29,11 @@ if(litrosAlcool <= 25){
 if(tipoCombustivel == "G"){
     const litrosGasolina = parseFloat(prompt("Quantos litros foi abastecido?"))
     if(litrosGasolina <= 25){
-        const precoFinal= litrosGasolina * 2.7 - litrosGasolina * 0.3 
+        const precoFinal= litrosGasolina * 2.7 - litrosGasolina * 0.03 
         alert("O valor pago foi de " + precoFinal)
     
     }else{
-        const precoFinal = litrosGasolina * 2.7 - litrosGasolina * 0.5
+        const precoFinal = litrosGasolina * 2.7 - litrosGasolina * 0.05
         alert(" O valor pago foi de " + precoFinal)
     }
 }
