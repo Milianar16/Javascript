@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        /* 1)Faça um programa em Javascript que leia um vetor de seis elementos numéricos inteiros, calcule e mostre:
+a) A quantidade de números pares
+b) Quais os números pares
+c) A quantidade de números ímpares
+d) Quais os números ímpares*/
+
+const numeros = []
+
+let qtdNumerospares = 0
+let qtdNumerosImpares = 0
+
+for(let i=0; i < 6; i++) {
+    numeros[i] = parseInt(prompt('Digite um número'))
+    
+    if(numeros[i] % 2 == 0 ) {
+        qtdNumerospares++
+    }else{
+        qtdNumerosImpares++
+    }
+}
+   
+alert('Quantidade de números pares '+qtdNumerospares)
+alert('Quantidade de números impares '+qtdNumerosImpares)
+
+
+for(let num of numeros){
+    if(num % 2 != 0 ) {
+        alert('número '+num+ ' é impar')
+    }else{
+        alert('número '+num+ ' é par')
+    }
+}
+
+   </script>
+</body>
+</html>
