@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Objeto JS</title>
+</head>
+<body>
+    
+    <pre id="produtoPrint"></pre>
+
+    <script>
+        //1)Crie um algortimo que recebe informações de 15 produtos. Cada produto possui nome, marca, uma foto (link de uma imagem da internet), preço unitário e a 
+        //quantidade de produtos em estoque. Ao receber essas informações dos produtos, imprima no HTML essas informações de cada produto e o produto entre o preço e a quantidade de produtos em estoque (preço total).
+      
+    let produto=
+    {
+      nome:'',
+      marca:'',
+      foto:'',
+      precoUnitario: 0, 
+      quantidadeProduto: 0,
+      qtdDeProdutosEstoque:0,
+      precoTotal: 0
+    } 
+       
+      for(let i=1; i<=2; i++){
+            produto.nome= prompt(`Digite o nome do produto nº ${i}?`)
+            produto.marca=prompt(`Digite a marca do produto nº ${i}?`)
+            produto.foto=prompt(`Digite o link da imagem do produto nº ${i}`)
+            produto.precoUnitario=parseFloat(prompt(`Digite o valor do produto nº ${i}?`))
+            produto.quantidadeProduto=parseInt(prompt(`Digite a quantidade do produto em estoque`))
+            produto.precoTotal=produto.precoUnitario * produto.quantidadeProduto
+-
+        document.write(`<p><img src="${foto}"
+            <p> Nome do Produto: ${produto.nome} </p>
+            <p> Marca: ${produto.marca} </p>
+            <p> Foto: ${produto.foto} </p>
+            <p> Preço: ${produto.precoUnitario} </p>
+            <p> Estoque: ${produto.quantidadeProduto} </p>
+            <p> Valor Total do estoque:${produto.precoTotal} `)
+
+        }
+       
+</script>
+</body>
+</html>

@@ -10,7 +10,7 @@
     
     <script>
 
-        /* 1)Faça um programa em Javascript que leia um vetor de seis elementos numéricos inteiros, calcule e mostre:
+        /* 1)Faça um programa em Javascript que leia um vetor de 6 elementos numéricos inteiros, calcule e mostre:
 a) A quantidade de números pares
 b) Quais os números pares
 c) A quantidade de números ímpares
@@ -18,30 +18,35 @@ d) Quais os números ímpares*/
 
 const numeros = []
 
-let qtdNumerospares = 0
-let qtdNumerosImpares = 0
 
-for(let i=0; i < 6; i++) {
-    numeros[i] = parseInt(prompt('Digite um número'))
-    
-    if(numeros[i] % 2 == 0 ) {
-        qtdNumerospares++
-    }else{
-        qtdNumerosImpares++
-    }
+ // Criar um novo array 
+const nums = []
+
+//criar um loop que execute 6 vezes 
+for( let i=1; i <=6; i++) {
+    const n = parseInt(prompt(`Digite o ${i}º Numero`))
+    nums.push(n)
 }
-   
-alert('Quantidade de números pares '+qtdNumerospares)
-alert('Quantidade de números impares '+qtdNumerosImpares)
+
+// separar os pares dos ímpares 
+const pares = []
+const impares = []
+
+// percorrer o array com os numeros informados
+// criar um variável que guardará os valores de cada posição do array
+// o array que iremos percorrer
 
 
-for(let num of numeros){
-    if(num % 2 != 0 ) {
-        alert('número '+num+ ' é impar')
-    }else{
-        alert('número '+num+ ' é par')
-    }
+for( let numero of nums){
+    if(numero % 2 == 0 ) {
+       pares.push(numero)
+} else{
+    impares.push(numero)
 }
+}
+
+alert(`Nós temos${pares.length} valores pares: ${pares.join(', ')}`)
+alert(`Nós temos ${impares.length} valores impares:${impares.join(', ')}`)
 
    </script>
 </body>

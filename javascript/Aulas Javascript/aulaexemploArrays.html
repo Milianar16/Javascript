@@ -19,9 +19,10 @@ const qtdProdutos = parseInt(prompt('Informe a quantidade de produtos:'))
    // ler o preço de cada produto e armazenar em um array
    const precosProdutos= []
 
-   for(let i=0; i < qtdProdutos; i++) {
+   for(let i=0; i < qtdProdutos; i++) { /*contador*/
     let preco = parseFloat(prompt('Informe o valor do produto'))
-     precosProdutos[i] = preco
+    //precosProdutos[i]=precos
+    precosProdutos.push(preco) //pegar um valor e adc no final do seu array
  
    }
  let soma = 0 , max=0, min=Number.MAX_VALUE
