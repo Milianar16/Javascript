@@ -1,51 +1,77 @@
 :root {
-    --azul: #0f637a;
-    --amarelao: #ffd900;
-    --pink: var(#c0f);
+   
+    --rosa: #FFC0CB;
+    --rescuro: #c0f;
+    
+    
 }
 
 body {
-    background-color: var(--azul);
+    background-color:var(--rosa);
+   
+    
 }
 
+
+.img{
+    margin:100%;
+   
+}
+
+
+.btn{
+    background-color:#f9537f
+}
+
+.cor{
+    background-color: var(--rosa);
+}
 main {
-    min-height: 100vh;
+    max-height: 100vh;
+   
 }
 
 #main-header {
     height: 90px;
+    
 }
 
 #app-logo {
-    width: 220px;
+    width: 720px;
+   
 }
 
 #add-todo {
     font-size: 0;
-    background-color: var(--amarelao);
+    background-color:#f9537f
 }
 
 #todos-list .card {
-    background-color: var(--);
+    background: #f9537f;
+    
+    
 }
 
+
 #todos-list .card + .card {
-    margin-top: 10px;
+    margin-top:10px;
+     
+    
 }
 
 #importante {
-    color: red;
+    color: black;
     margin-right: 30px;
 
 }
 
 #medio {
-    color: yellow;
+    color: black;
     margin-right: 30px;
 }
 
 #facil {
-    color: orangered;
+    color: black;
     margin-right: 10px;
 }
 .todo-text {
@@ -54,11 +80,13 @@ main {
 
 .delete-todo {
     font-size: 0;
+    
 }
 
 #containerCheckBox {
     display: flex;
     justify-content: center;
+    
 }
 
 .iconeVermelho {

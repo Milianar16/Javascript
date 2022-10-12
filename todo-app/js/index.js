@@ -71,7 +71,7 @@ function renderizarTodos() {
 
     for (let i = 0; i<todos.length;i++) {
         const divCard = document.createElement('div')
-        divCard.classList.add('card', 'bg-warning')
+        divCard.classList.add('card', 'bg-pink')
 
         const divCardBody = document.createElement('div')
         divCardBody.classList.add('card-body', 'd-flex', 'align-items-center')
