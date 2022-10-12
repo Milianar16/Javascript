@@ -1,42 +1,80 @@
-:root{
-    --azul:#0f637a;
-    --amarelo: #ffd900;
+:root {
+    --azul: #0f637a;
+    --amarelao: #ffd900;
+    --pink: var(#c0f);
 }
 
-body{
+body {
     background-color: var(--azul);
 }
 
-main{
+main {
     min-height: 100vh;
 }
 
-#main-header{
+#main-header {
     height: 90px;
-
 }
 
-#app-logo{
+#app-logo {
     width: 220px;
 }
 
-#add-todo{
+#add-todo {
     font-size: 0;
-    background-color: var(--amarelo);
+    background-color: var(--amarelao);
 }
 
-#todos-list .card{
-    background-color: var(--amarelo);
+#todos-list .card {
+    background-color: var(--);
 }
 
-#todos-list .card + .card{
+#todos-list .card + .card {
     margin-top: 10px;
 }
 
-.todo-text{
-    margin:  0;
+#importante {
+    color: red;
+    margin-right: 30px;
+
 }
 
-.delete-todo{
+#medio {
+    color: yellow;
+    margin-right: 30px;
+}
+
+#facil {
+    color: orangered;
+    margin-right: 10px;
+}
+.todo-text {
+    margin: 0;
+}
+
+.delete-todo {
     font-size: 0;
+}
+
+#containerCheckBox {
+    display: flex;
+    justify-content: center;
+}
+
+.iconeVermelho {
+    color: red;
+    background-color: red;
+    border-radius: 50px;
+}
+
+.iconeAmarelo {
+    color: yellow;
+    background-color: yellow;
+    border-radius: 50px;
+}
+
+.iconeVerde {
+    color: green;
+    background-color: green;
+    border-radius: 50px;
 }
